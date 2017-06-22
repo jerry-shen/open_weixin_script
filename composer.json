@@ -1,0 +1,28 @@
+{
+    "name": "openwx/script",
+    "description": "php script process weixin message",
+    "authors": [
+        {
+            "name": "shenhaifei",
+            "email": "haifei.shen@eub-inc.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^1.23",
+        "catfan/Medoo": "^1.4",
+        "phpmailer/phpmailer": "^5.2"
+    },
+    "autoload":{
+        "psr-0": {
+        },
+        "psr-4": {
+            "Wechat\\": "src/Wechat",        
+            "Util\\": "src/Util",
+            "Model\\": "src/Model",
+            "Process\\": "src/Process"
+        },
+        "classmap": [ 
+
+        ]
+    }
+}
